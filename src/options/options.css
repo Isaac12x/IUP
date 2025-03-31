@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.options {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.export-btn, .import-btn, .reset-btn {
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  font-weight: bold;
+}
+
+.export-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.import-btn {
+  background-color: #007bff;
+  color: white;
+  display: inline-block;
+}
+
+.reset-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.config-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.summary-item {
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.value {
+  font-size: 16px;
+  color: #333;
+}
+
+.documentation {
+  line-height: 1.5;
+}
+
+.documentation ul {
+  padding-left: 25px;
+}
+
+.documentation li {
+  margin-bottom: 8px;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.import-container {
+  display: inline-block;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 18px;
+  color: #666;
+}

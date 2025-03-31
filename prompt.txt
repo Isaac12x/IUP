@@ -1,0 +1,11 @@
+write a popup.jsx for a chrome extension that has settings. The settings are data rows where the name of the row is a  URL (hostname). The url has a toggle that opens on click and collapses on click. On opening an accordion opens for that data row and shows its children indented 2 -3 spaces. Multiple nested child settings may exists for a URL. For example:
+|--<all_urls>
+|--youtube.com
+  |-- landing page
+    |-- show only search bar on opening
+The settings can have multiple levels and be toggled on/off at the deepest child in the tree. 
+Each child setting that can be enabled disabled has an option to toggle for all sites and not only the current url. If toggled for all sites this setting then moves up to the <all_urls> data row as a child, appended to others. If the user unselects enable for all sites then it moves back to the original location (a different data row).
+
+The parent url also has an on/off switch toggle.
+
+All data gets stored in Chrome’s storage.local
